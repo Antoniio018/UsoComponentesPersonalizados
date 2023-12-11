@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import es.ieslosmontecillos.componentes_gomezantonio.CampoTextoBoton?>
+<?import es.ieslosmontecillos.componentes_gomezantonio.CampoTextoNumerico?>
+<?import es.ieslosmontecillos.componentes_gomezantonio.Temporizador?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ieslosmontecillos.usocomponentespersonalizados.HelloController">
+    <children>
+        <CampoTextoBoton fx:id="txtbtnNombre" layoutX="189.0" layoutY="133.0" onAction="#grabarRegistroNombre" />
+        <CampoTextoBoton fx:id="txtbtnApellido" layoutX="189.0" layoutY="174.0" onAction="#grabarRegistroApellido" />
+        <Label fx:id="lblResultado" layoutX="177.0" layoutY="368.0" text="Pulsa botón... y muestra texto en esta etiqueta" />
+        <CampoTextoNumerico layoutX="189.0" layoutY="223.0" />
+      <Temporizador fx:id="temp" layoutX="247.0" layoutY="51.0" onFinished="#heTerminado" segundos="5" />
+
+    </children>
+</AnchorPane>
